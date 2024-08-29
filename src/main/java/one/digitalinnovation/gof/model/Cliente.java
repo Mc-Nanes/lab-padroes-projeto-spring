@@ -6,13 +6,14 @@ import jakarta.validation.constraints.Size;
 
 @Entity
 public class Cliente {
-
+//teste
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	@NotNull(message = "Nome não pode ser nulo")
     @Size(min = 1, message = "Nome não pode estar vazio")
 	private String nome;
+	
 	@ManyToOne
 	private Endereco endereco;
 
